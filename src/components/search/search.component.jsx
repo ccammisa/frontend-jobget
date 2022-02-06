@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { TextField  , FormControl, Box} from '@mui/material';
+import { TextField, FormControl, Box, Button } from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
 import './search.styles.css';
 
 const SearchComponent = (props) => {
@@ -9,20 +10,22 @@ const SearchComponent = (props) => {
   const [radius, setRadius] = useState()
 
   const handleInputKeywords = (event) => {
-    setKeywords(event.target.value);
-    //console.log(event.target.value)
+    let keyword = event.target.value.toLowerCase()
+    setKeywords(keyword);
   };
 
   const handleInputLocation =(event)=> {
-    setLocation(event.target.value);
-    //console.log(event.target.value)
+    setLocation((event.target.value).toLowerCase());
   }
 
   const handleInputRadius = (event) => {
     setRadius(event.target.value)
-    //console.log(event.target.value)
   }
 
+  const handleClick = (event)=>{
+    event.preventDefault();
+    props.handleSearch({keyword, location, radius});
+  }
 
   return (
   <Box
@@ -37,7 +40,7 @@ const SearchComponent = (props) => {
         id="input-job"
         value={keyword}
         variant="outlined"
-        placeholder="Insert keywords to start search"
+        placeholder="Insert Job title to start search"
         onChange={handleInputKeywords}
       />
     </FormControl>
@@ -48,7 +51,7 @@ const SearchComponent = (props) => {
         id="input-location"
         value={location}
         variant="outlined"
-        placeholder="Santa Monica"
+        placeholder="Country or city name"
         onChange={handleInputLocation}
       />
     </FormControl>
@@ -68,6 +71,14 @@ const SearchComponent = (props) => {
           max: 99999
         }}
       />
+    </FormControl>
+    <FormControl>
+      <Button
+        variant="contained"
+        startIcon={<SearchIcon />}
+        size="medium"
+        onClick={handleClick}
+      >Find a Job!</Button>
     </FormControl>
   </Box>
   );
