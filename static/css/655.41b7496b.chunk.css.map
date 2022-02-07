@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/655.41b7496b.chunk.css","mappings":"AAAA,WAGE,aAAS,CAFT,YAAa,CAEb,QAAS,CADT,yBAA2B,CAE3B,WACF","sources":["components/jobs-list/jobs-list.styles.css"],"sourcesContent":[".jobs-list{\r\n  display: grid;\r\n  grid-template-columns: 1fr ;\r\n  gap: 2rem;\r\n  margin: 2rem;\r\n}"],"names":[],"sourceRoot":""}
