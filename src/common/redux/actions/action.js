@@ -2,7 +2,7 @@ import axios from 'axios';
 import { SEARCH_API_URL, API_KEY } from '../../utils/constants';
 import { setErrors } from './errors';
 
-export const getJobs = ({keyword, location, radius, page = 1}) => {
+export const getJobs = ({keyword, location, radius = 10, page = 1}) => {
   return async (dispatch) => {
     try {
       keyword = keyword ? encodeURIComponent(keyword) : '';
