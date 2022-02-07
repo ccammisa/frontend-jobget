@@ -7,7 +7,7 @@ import HomePageContainer from './pages/home-page/home-page.container';
 function App() {
   return (
     <>
-      <HomePageContainer/>
+      <HomePageContainer data-testid="homepage-container" />
     </>
   );
 }
