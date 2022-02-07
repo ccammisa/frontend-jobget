@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/frontend-jobget/static/css/main.4f275d3a.css",
-    "main.js": "/frontend-jobget/static/js/main.4ee4faf6.js",
+    "main.js": "/frontend-jobget/static/js/main.a3ba6889.js",
     "static/css/655.41b7496b.chunk.css": "/frontend-jobget/static/css/655.41b7496b.chunk.css",
     "static/js/655.44239594.chunk.js": "/frontend-jobget/static/js/655.44239594.chunk.js",
     "static/js/377.5a317f7d.chunk.js": "/frontend-jobget/static/js/377.5a317f7d.chunk.js",
     "service-worker.js": "/frontend-jobget/service-worker.js",
     "index.html": "/frontend-jobget/index.html",
     "main.4f275d3a.css.map": "/frontend-jobget/static/css/main.4f275d3a.css.map",
-    "main.4ee4faf6.js.map": "/frontend-jobget/static/js/main.4ee4faf6.js.map",
+    "main.a3ba6889.js.map": "/frontend-jobget/static/js/main.a3ba6889.js.map",
     "655.41b7496b.chunk.css.map": "/frontend-jobget/static/css/655.41b7496b.chunk.css.map",
     "655.44239594.chunk.js.map": "/frontend-jobget/static/js/655.44239594.chunk.js.map",
     "377.5a317f7d.chunk.js.map": "/frontend-jobget/static/js/377.5a317f7d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f275d3a.css",
-    "static/js/main.4ee4faf6.js"
+    "static/js/main.a3ba6889.js"
   ]
 }
